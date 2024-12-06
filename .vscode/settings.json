@@ -1,0 +1,11 @@
+{
+    "tailwindCSS.emmetCompletions": true,
+    "emmet.useInlineCompletions": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "json.schemas": [
+
+    ],
+    "emmet.preferences": {
+        
+    }
+}
