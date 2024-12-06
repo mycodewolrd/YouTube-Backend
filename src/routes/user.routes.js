@@ -17,7 +17,7 @@ const router = Router();
 
 //* Create a new user with the given information and user Schema
 
-// ! unsecured routes
+// Unsecured routes
 router.route("/register").post(
   upload.fields([
     {
@@ -33,13 +33,13 @@ router.route("/register").post(
   registerUser
 );
 
-//*login user
+//*LogIn User
 router.route("/login").post(loginUser);
 
-//*refresh access token route
+//*refresh Access token route
 router.route("/refresh-token").post(refreshAccessToken);
 
-// * Secured routes user Login routes and Logout routes
+// * Secured routes 
 router.route("/logout").post(verifyJWT, logoutUser);
 router.route("/change-password").post(verifyJWT, changeCurrentPassword);
 router.route("/current-user").get(verifyJWT, getCurrentUser);
